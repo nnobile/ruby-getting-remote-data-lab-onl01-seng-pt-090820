@@ -20,6 +20,7 @@ def parse_json
   json.collect do |json|
   json["agency"]
 end
+end
 
 
 
