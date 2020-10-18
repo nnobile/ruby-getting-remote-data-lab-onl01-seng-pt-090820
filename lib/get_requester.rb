@@ -21,6 +21,3 @@ def parse_json
     person["people"]
   end
 end
-end
-end
-end
