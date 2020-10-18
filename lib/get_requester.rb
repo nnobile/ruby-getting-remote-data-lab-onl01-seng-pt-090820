@@ -1,3 +1,4 @@
+require 'pry'
 require 'net/http'
 require 'open-uri'
 require 'json'
@@ -15,9 +16,9 @@ def get_response_body
 end
 
 def parse_json
-  programs = JSON.parse(self.get_programs)
-programs.collect do |program|
-  program["agency"]
+  json = JSON.parse(self.parse_json)
+  json.collect do |json|
+  json["agency"]
 
 
 end
