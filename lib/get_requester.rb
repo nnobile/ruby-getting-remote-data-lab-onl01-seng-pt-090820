@@ -21,14 +21,3 @@ def parse_json
   json["agency"]
 end
 end
-
-
-
-
-
-
-
-
-
-#programs = GetPrograms.new
-#puts programs.program_school.uniq
