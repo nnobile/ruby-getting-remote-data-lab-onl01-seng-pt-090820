@@ -16,9 +16,11 @@ def get_response_body
 end
 
 def parse_json
-  json = JSON.parse(self.parse_json)
-  json.collect do |json|
-  json["agency"]
+  people = JSON.parse(self.get_response_body)
+  people.each do |person|
+    person["people"]  
+  end
+end
 end
 end
 end
