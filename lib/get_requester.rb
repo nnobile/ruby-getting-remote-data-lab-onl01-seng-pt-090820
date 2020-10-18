@@ -6,7 +6,7 @@ require 'json'
 class GetRequester
 
 def initialize
-  @URL = URL("https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json")
+  @URL = URL
 end
 
 def get_response_body
@@ -19,8 +19,6 @@ def parse_json
   json = JSON.parse(self.parse_json)
   json.collect do |json|
   json["agency"]
-
-
 end
 
 
