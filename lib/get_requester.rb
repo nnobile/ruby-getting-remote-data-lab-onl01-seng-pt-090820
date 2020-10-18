@@ -18,7 +18,7 @@ end
 def parse_json
   people = JSON.parse(self.get_response_body)
   people.each do |person|
-    person["people"]  
+    person["people"]
   end
 end
 end
